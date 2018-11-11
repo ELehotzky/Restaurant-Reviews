@@ -132,7 +132,7 @@ nav h1 a {
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
-  background-color: #f3f3f3;
+  background-color: #D7DAE5;
   list-style: outside none none;
   margin: 0;
   padding: 30px 15px 60px;
@@ -142,7 +142,7 @@ nav h1 a {
   flex-direction: column;
 }
 #restaurants-list li {
-  background-color: #fff;
+  background-color: #EEE5E9;
   border: 2px solid #ccc;
   font-family: Arial, sans-serif;
   margin: 15px;
