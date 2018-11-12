@@ -147,7 +147,7 @@ nav h1 a {
   font-family: Arial, sans-serif;
   margin: 15px;
   min-height: 380px;
-  padding: 0 30px 25px;
+  padding: 25px 30px 25px;
   text-align: left;
   width: 75%;
   max-width: 500px;
@@ -282,3 +282,41 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/* ====================== CSS for Mobile Devices ====================== */
+
+@media only screen and (min-width: 768px) {
+  #restaurants-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #restaurant-container, #reviews-container {
+  width: 50%;
+  }
+  .inside #map-container {
+    height: 100%;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: : 768px) and (max-width: 1280px) {
+  #restaurant-container {
+    padding: 15px;
+  }
+  #reviews-ontainer {
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
