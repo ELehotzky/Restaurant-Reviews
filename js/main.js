@@ -13,14 +13,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   fetchCuisines();
 });
 
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("/sw.js")
-    .catch(function(error) {
-      console.error(error);
-    });
-}
-
 /**
  * Fetch all neighborhoods and set their HTML.
  */
@@ -195,3 +187,13 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 
 } 
+
+// Check for service worker
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("/sw.js")
+    .catch(function(error) {
+      console.log(error);
+    });
+}
